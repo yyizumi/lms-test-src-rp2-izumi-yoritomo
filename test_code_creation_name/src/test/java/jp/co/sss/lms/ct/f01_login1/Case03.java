@@ -13,6 +13,8 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import jp.co.sss.lms.ct.util.WebDriverUtils;
+
 /**
  * 結合テスト ログイン機能①
  * ケース03
@@ -67,9 +69,9 @@ public class Case03 {
 		WebElement loginButton = webDriver.findElement(By.className("btn-primary"));
 		loginButton.click();
 
-		// コース詳細画面の表示確認
-		String courseDetail = webDriver.findElement(By.tagName("body")).getText();
-		assertTrue(courseDetail.contains("コース詳細"));
+		// コース詳細画面のタイトル確認
+		WebDriverUtils.visibilityTimeout(By.cssSelector(".navbar-brand"), 10);
+		assertEquals("コース詳細 | LMS", WebDriverUtils.webDriver.getTitle());
 
 		// エビデンス取得
 		getEvidence(new Object() {
