@@ -138,7 +138,6 @@ public class Case05 {
 
 		// 検索結果に「キャンセル料」が含まれていることを確認
 		String pageText = webDriver.findElement(By.tagName("body")).getText();
-		System.out.println(pageText);
 		assertTrue(pageText.contains("キャンセル料"));
 
 		// エビデンス取得
