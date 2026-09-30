@@ -140,7 +140,7 @@ public class Case16 {
 	void test05() {
 		// 現在のパスワードを入力
 		webDriver.findElement(By.id("currentPassword"))
-				.sendKeys("StudentAB02");
+				.sendKeys("StudentAA04");
 
 		// 20文字以上の新しいパスワードを入力
 		webDriver.findElement(By.id("password"))
@@ -175,7 +175,7 @@ public class Case16 {
 	void test06() {
 		// 現在のパスワード入力
 		webDriver.findElement(By.id("currentPassword"))
-				.sendKeys("StudentAB02");
+				.sendKeys("StudentAA04");
 
 		// ポリシー違反の新しいパスワードを入力
 		// 英大文字を含まない
@@ -215,7 +215,7 @@ public class Case16 {
 	void test07() {
 		// 現在のパスワード入力
 		webDriver.findElement(By.id("currentPassword"))
-				.sendKeys("StudentAB02");
+				.sendKeys("StudentAA04");
 
 		// 新しいパスワード入力
 		webDriver.findElement(By.id("password"))

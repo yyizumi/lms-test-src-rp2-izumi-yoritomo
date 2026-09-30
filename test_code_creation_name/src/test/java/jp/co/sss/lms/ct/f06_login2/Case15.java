@@ -55,10 +55,10 @@ public class Case15 {
 	@DisplayName("テスト02 DBに初期登録された未ログインの受講生ユーザーでログイン")
 	void test02() {
 		// ユーザーID入力
-		webDriver.findElement(By.id("loginId")).sendKeys("StudentAA05");
+		webDriver.findElement(By.id("loginId")).sendKeys("StudentAA04");
 
 		// パスワード入力
-		webDriver.findElement(By.id("password")).sendKeys("StudentAA05");
+		webDriver.findElement(By.id("password")).sendKeys("StudentAA04");
 
 		// ログインボタンを押下
 		webDriver.findElement(By.cssSelector("button[type='submit'], input[type='submit']")).click();
